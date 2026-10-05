@@ -125,3 +125,67 @@ for step, state in enumerate(path):
     print_puzzle(state)
 
 print("Total Moves:", len(path) - 1)
+
+#Output
+
+Initial State:
+2 8 3
+1 6 4
+7   5
+
+Goal State:
+1 2 3
+8   4
+7 6 5
+
+Solution:
+
+Step: 0
+g(n): 0
+h(n): 5
+f(n): 5
+2 8 3
+1 6 4
+7   5
+
+Step: 1
+g(n): 1
+h(n): 4
+f(n): 5
+2 8 3
+1   4
+7 6 5
+
+Step: 2
+g(n): 2
+h(n): 3
+f(n): 5
+2   3
+1 8 4
+7 6 5
+
+Step: 3
+g(n): 3
+h(n): 2
+f(n): 5
+  2 3
+1 8 4
+7 6 5
+
+Step: 4
+g(n): 4
+h(n): 1
+f(n): 5
+1 2 3
+  8 4
+7 6 5
+
+Step: 5
+g(n): 5
+h(n): 0
+f(n): 5
+1 2 3
+8   4
+7 6 5
+
+Total Moves: 5
